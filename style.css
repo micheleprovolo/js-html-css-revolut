@@ -2,5 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
+    font-family: 'Roboto', sans-serif;
 }
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/*dropdown*/
+.dropdown {
+    position: relative;
+}
+
+.dropdowncontent {
+    position: absolute;
+    top: 40px;
+    right: -50px;
+    display: none;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px grey;
+}
+
+/* .dropdowncontent > ul {
+    
+} */
+
+.dropdowncontent > ul > li {
+
+    margin: 0;
+}
+
+.active {
+    color: blue;
+}
+
+.open {
+    display: block;
+  }

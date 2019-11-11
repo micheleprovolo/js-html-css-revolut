@@ -17,6 +17,11 @@ li {
     list-style-type: none;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul {
     padding: 20px;
     display: flex;
@@ -26,6 +31,10 @@ nav ul {
 nav ul li {
     margin-right: 20px;
 }
+
+/* .logo{
+    max-width: 10%;
+} */
 
 /*dropdown*/
 .dropdown {
@@ -37,24 +46,19 @@ nav ul li {
     top: 40px;
     right: -50px;
     display: none;
-    width: 300px;
+    /* width: 150px; */
     background-color: #fff;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
 }
-
-/* .dropdowncontent > ul {
-    
-} */
+.dropdowncontent > ul {
+    display: block;
+    text-align: center;
+  }
 
 .dropdowncontent > ul > li {
-
-    margin: 0;
+    padding: 7%;
 }
 
 .active {
-    color: blue;
-}
-
-.open {
     display: block;
-  }
+}

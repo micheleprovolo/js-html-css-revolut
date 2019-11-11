@@ -1,15 +1,18 @@
 
-$(".dropdown > a").click(function() {
 
-    if (!$(this).hasClass("active")) {
-      $(".parent li").removeClass("active");
-      $(".dropdowncontent").removeClass("open");
-      $(this).addClass("active");
-      $(".dropdowncontent").addClass("open");
-      
-    } else {
-      $(".parent li").removeClass("active");
-      $(".dropdowncontent").removeClass("open");
+
+
+$(document).ready(function () {
+
+$(".dropdown").click(function() {
+
+    var selected = $(this).find(".dropdowncontent").hasClass("active");
+
+    $(".dropdowncontent").removeClass("active");
     
+    if (selected == false){
+        $(this).find(".dropdowncontent").toggleClass("active");
     }
   });
+
+});
